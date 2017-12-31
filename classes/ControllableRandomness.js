@@ -8,7 +8,8 @@ class ControllableRandomness {
    */
   constructor(min, max) {
     min = Math.trunc(min), max = Math.trunc(max);
-    if (min >= max) throw new RangeError("Minimum value has to be smaller than maximum value");
+    if (min >= max) throw new RangeError(
+      "Minimum value has to be smaller than maximum value");
     this.min = min;
     this.max = max;
     this.choices = new Array(max - min + 1).fill(1);
@@ -23,18 +24,26 @@ class ControllableRandomness {
 
   /**
    * Sets a line between two points
-   * @param {[type]} point1 [description]
-   * @param {[type]} point2 [description]
+   * @param {point} point1 The first point.
+   * @param {point} point2 The second point.
    * @throws {RangeError} A position is not in range or a value supplied is negative.
    */
   set(point1, point2) {
-    const {min, max, choices} = this;
-    let {position: pos1, value: val1} = point1,
-      {position: pos2, value: val2} = point2; // deals with mutability
+    const {
+      min, max, choices
+    } = this;
+    let {
+      position: pos1,
+      value: val1
+    } = point1, {
+      position: pos2,
+      value: val2
+    } = point2; // deals with mutability
     pos1 = Math.trunc(pos1);
     pos2 = Math.trunc(pos2);
 
-    if (pos1 > max || pos1 < min || pos2 > max || pos2 < min) throw new RangeError("A position is not in range");
+    if (pos1 > max || pos1 < min || pos2 > max || pos2 < min) throw new RangeError(
+      "A position is not in range");
     if (val1 < 0 || val2 < 0) throw new RangeError("A value is negative");
 
     if (pos1 > pos2) {
@@ -52,11 +61,13 @@ class ControllableRandomness {
   }
 
   /**
-   * Generates the random number.
-   * @return {Number} The random number
+   * Generates a random number.
+   * @return {Number} A random number
    */
   generate() {
-    const {min, choices} = this;
+    const {
+      min, choices
+    } = this;
     let total = 0;
 
     for (const number of choices) {
