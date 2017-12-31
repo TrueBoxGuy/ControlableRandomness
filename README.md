@@ -11,6 +11,8 @@ controllableRandom.set({
   posistion: 20,
   value: 10
 }); // this makes a line, two points are needed. 
+
+controllableRandom.generate(); //this generates the number
 ```
 ## Todo
 * Make it possible to generate numbers that aren't truncated.
