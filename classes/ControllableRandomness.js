@@ -15,9 +15,9 @@ class ControllableRandomness {
   }
 
   /**
-   * A posistion and a value for a line
+   * A position and a value for a line
    *  @typedef {Object} point
-   *  @property {Number} posistion - The posistion of this point, has to be in range of min, max and will be truncated.
+   *  @property {Number} position - The position of this point, has to be in range of min, max and will be truncated.
    *  @property {Number} value - The value of this point, has to be positive.
    */
 
@@ -25,16 +25,16 @@ class ControllableRandomness {
    * Sets a line between two points
    * @param {[type]} point1 [description]
    * @param {[type]} point2 [description]
-   * @throws {RangeError} A posistion is not in range or a value supplied is negative.
+   * @throws {RangeError} A position is not in range or a value supplied is negative.
    */
   set(point1, point2) {
     const {min, max, choices} = this;
-    let {posistion: pos1, value: val1} = point1,
-      {posistion: pos2, value: val2} = point2; // deals with mutability
+    let {position: pos1, value: val1} = point1,
+      {position: pos2, value: val2} = point2; // deals with mutability
     pos1 = Math.trunc(pos1);
     pos2 = Math.trunc(pos2);
 
-    if (pos1 > max || pos1 < min || pos2 > max || pos2 < min) throw new RangeError("A posistion is not in range");
+    if (pos1 > max || pos1 < min || pos2 > max || pos2 < min) throw new RangeError("A position is not in range");
     if (val1 < 0 || val2 < 0) throw new RangeError("A value is negative");
 
     if (pos1 > pos2) {

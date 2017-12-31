@@ -1,10 +1,10 @@
-const ControllableRandomness = require('../classes/ControllableRandomness'),
+const ControllableRandomness = require('controllablerandomness'),
   random = new ControllableRandomness(5, 100);
 random.set({
-  posistion: 6,
+  position: 6,
   value: 50
 }, {
-  posistion: 20,
+  position: 20,
   value: 10
 });
 
@@ -15,4 +15,4 @@ for (let i = 0; i < 1e5; i++) {
   else results[number.toString()] = 1;
 }
 
-console.log(results);
+console.log(results); // this shows how many times each result happened.
