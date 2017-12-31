@@ -1,6 +1,6 @@
 {
   "name": "controllablerandomness",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package that allows you to control the chances of getting a certain number by drawing lines.",
   "runkitExampleFilename": "./tests/example.js",
   "main": "./classes/ControllableRandomness.js",
