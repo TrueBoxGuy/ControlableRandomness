@@ -1,5 +1,5 @@
 /* Class to generate random numbers, but you can control the chances of which number you will generate */
-class ControlableRandomness {
+class ControllableRandomness {
   /**
    * Initialises the array that numbers are selected from.
    * @param  {number} min Minimun number, gets truncated.
@@ -71,4 +71,4 @@ class ControlableRandomness {
   }
 }
 
-module.exports = ControlableRandomness;
+module.exports = ControllableRandomness;

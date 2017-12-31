@@ -1,5 +1,5 @@
-const ControlableRandomness = require('../classes/ControlableRandomness'),
-  random = new ControlableRandomness(5, 100);
+const ControllableRandomness = require('../classes/ControllableRandomness'),
+  random = new ControllableRandomness(5, 100);
 random.set({
   posistion: 6,
   value: 50
