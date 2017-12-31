@@ -1,0 +1,29 @@
+{
+  "name": "controllablerandomness",
+  "version": "1.0.1",
+  "description": "A package that allows you to control the chances of getting a certain number by drawing lines.",
+  "runkitExampleFilename": "./tests/example.js",
+  "main": "./classes/ControllableRandomness.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueBoxGuy/ControllableRandomness.git"
+  },
+  "keywords": [
+    "random",
+    "control",
+    "math",
+    "advanced"
+  ],
+  "author": "TrueBoxGuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrueBoxGuy/ControllableRandomness/issues"
+  },
+  "homepage": "https://github.com/TrueBoxGuy/ControllableRandomness#readme"
+}
