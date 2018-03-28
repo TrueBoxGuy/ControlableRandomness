@@ -17,7 +17,9 @@ controllableRandom.generate(); //this generates the number from a point
 /*
 The value of each point is added up.
 With this, a random number is generated with the range of 0, to the sum of all points.
-The number returned is the point where the sum of all points behind it and itself is greater than the random number generated.
+The number returned is the point where the sum of all points behind it and itself 
+is greater than the random number generated.
+*/
 ```
 ## Todo
 * Make it possible to generate numbers that aren't truncated.
